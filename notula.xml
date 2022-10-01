@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade" version="4.0">
+    <name>com_notula</name>
+    <author>Risam</author>
+    <creationDate>10/01/2022</creationDate>
+    <authorEmail>risam1984@gmail.com</authorEmail>
+    <authorUrl>https://ft-untagcirebon.ac.id</authorUrl>
+    <copyright>Risam</copyright>
+    <license>FT UNTAG used only</license>
+    <version>1.0.0</version>
+    <description>COM_NOTULA_XML_DESCRIPTION</description>
+    <scriptfile>script.pdf</scriptfile>
+    <projectName>Notula</projectName>
+    <namespace path="src">FtUntagC\Component\Notula</namespace>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install/mysql/install.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install/mysql/uninstall.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/update/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <media destination="com_notula" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+        <filename>index.html</filename>
+    </media>
+    
+    <administration>
+        <menu img="media/com_notula/images/icon-menu.png" alt="COM_NOTULA" link="option=com_notula">COM_NOTULA</menu>
+        <files folder="admin">
+            <folder>forms</folder>
+            <folder>help</folder>
+            <folder>helpers</folder>
+            <folder>install</folder>
+            <folder>update</folder>            
+            <folder>services</folder>
+            <folder>src</folder>            
+            <folder>tmpl</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            
+        </files>
+
+        <languages folder="admin/language">
+            <language tag="id-ID">id-ID/com_notula.ini</language>
+            <language tag="id-ID">id-ID/com_notula.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
