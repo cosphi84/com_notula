@@ -42,8 +42,7 @@
             <folder>forms</folder>
             <folder>help</folder>
             <folder>helpers</folder>
-            <folder>install</folder>
-            <folder>update</folder>            
+            <folder>sql</folder>        
             <folder>services</folder>
             <folder>src</folder>            
             <folder>tmpl</folder>
