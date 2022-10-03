@@ -7,7 +7,7 @@
     <authorUrl>https://ft-untagcirebon.ac.id</authorUrl>
     <copyright>Risam</copyright>
     <license>FT UNTAG used only</license>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <description>COM_NOTULA_XML_DESCRIPTION</description>
     <scriptfile>script.pdf</scriptfile>
     <projectName>Notula</projectName>
@@ -37,7 +37,24 @@
     </media>
     
     <administration>
-        <menu img="media/com_notula/images/icon-menu.png" alt="COM_NOTULA" link="option=com_notula">COM_NOTULA</menu>
+        <menu img="media/com_notula/images/icon-menu.png" alt="COM_NOTULA">COM_NOTULA</menu>
+        <submenu>
+            <menu 
+                link = "option=com_notula&amp;view=notes" 
+                view = "notes"
+                img = "list"
+                alt = "Notula/Notes"
+            >
+            COM_NOTULA_MEETING
+            </menu>
+            <menu 
+                link = "option=com_categories&amp;view=categories&amp;extension=com_notula" 
+                alt = "Notula/Categories"
+            >
+            COM_NOTULA_CATEGORIES
+            </menu>
+        </submenu>
+            
         <files folder="admin">
             <folder>forms</folder>
             <folder>help</folder>
@@ -54,6 +71,8 @@
         <languages folder="admin/language">
             <language tag="id-ID">id-ID/com_notula.ini</language>
             <language tag="id-ID">id-ID/com_notula.sys.ini</language>
+            <language tag="en-GB">en-GB/com_notula.ini</language>
+            <language tag="en-GB">en-GB/com_notula.sys.ini</language>
         </languages>
     </administration>
 </extension>

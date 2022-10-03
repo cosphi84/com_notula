@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="filter">
+        <field 
+            name = "search"
+            type = "text"
+            label = "COM_NOTULA_FILTER_SEARCH"
+            inputmode = "search"
+            hint = "JSEARCH_FILTER"
+            noresults = "JGLOBAL_NO_MATCHING_RESULTS"
+        />
+    </fields>
+    <fields name="limit">
+
+    </fields>
+</form>
